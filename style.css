@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #1d1e22;
+}
+
+.cont {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #2a3741;
+    overflow: hidden;
+    border-radius: 500px;
+    box-shadow: 0 0px 60px 10px black;
+    transition: 0.5s ease-in-out;
+}
+
+.cont:hover {
+    background: #e9786b;
+}
+
+.sea {
+    width: 200px;
+    height: 200px;
+    background: #7fa1bb;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    top: 30px;
+}
+
+.cont:hover .sea {
+    background: #71baf2;
+}
+
+.star {
+    width: 1px;
+    height: 1px;
+    background: white;
+    position: relative;
+    box-shadow: 0 0 40px 4px white;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
+}
+
+.s1 {
+    left: 55px;
+    top: 25px;
+}
+
+.s2 {
+    top: 10px;
+    left: 130px;
+}
+
+.s3 {
+    top: 30px;
+    left: 160px;
+}
+
+.s4 {
+    top: -30px;
+    left: 90px;
+}
+
+.cont:hover .star {
+    opacity: 0;
+}
+
+.moon {
+    width: 45px;
+    height: 45px;
+    background: #d9d8d0;
+    box-shadow: inset -10px -2px 0 0px #53545780;
+    position: relative;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+}
+
+.cont:hover .moon {
+    transform: translate(90px, -90px);
+}
+
+.moon div:nth-child(1) {
+    width: 12.5px;
+    height: 12.5px;
+    background: #b9b8b0;
+    box-shadow: inset 3px -1px 0 0px #535457;
+    border-radius: 20px;
+    position: relative;
+    top: 13px;
+    left: 5px;
+}
+
+.moon div:nth-child(2) {
+    width: 7.2px;
+    height: 7.2px;
+    background: #b9b8b0;
+    box-shadow: inset 3px -1px 0 0px #535457;
+    border-radius: 20px;
+    position: relative;
+    top: -5px;
+    left: 25px;
+}
+
+.moon div:nth-child(3) {
+    width: 7.2px;
+    height: 7.2px;
+    background: #b9b8b0;
+    box-shadow: inset 3px -1px 0 0px #535457;
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+    left: 17px;
+}
+
+.sun {
+    width: 60px;
+    height: 60px;
+    background: #f2ef88;
+    border-radius: 80px;
+    box-shadow: 0 0 20px rgb(242 239 136 / 40%);
+    position: relative;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+}
+
+.cont:hover .sun {
+    top: 50%;
+    left: 50%;
+}
+
+h3 {
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 5px white;
+}
